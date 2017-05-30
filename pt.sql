@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: May 19, 2017 at 12:54 PM
+-- Generation Time: May 30, 2017 at 12:53 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.0.15
 
@@ -45,6 +45,14 @@ CREATE TABLE `keyissue` (
   `description` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `keyissue`
+--
+
+INSERT INTO `keyissue` (`ki_id`, `issue`, `description`) VALUES
+(1, 'Sundhed', '\r\n    Fri, lige og gratis adgang til sundhedsydelser for alle borgere.\r\n    Mulighed for en vis brugerbetaling i praksissektoren, dette gælder også tandbehandling.\r\n    Fokus på sygdomsforebyggelse og sundhedsfremme. Det skal være en del af tilbuddet fra praktiserende læger og hospitaler.\r\n    Sundhedsvæsenet skal i større grad gennemføre forskning og udnytte den nyeste viden og teknologi.\r\n'),
+(2, 'Uddannelse', '\r\n    Danmark skal være det førende vidensamfund præget af fleksibilitet og hurtig omstillingsevne.\r\n    Danmark skal være et centrum for udnyttelse af forskning og viden. Forskningsinstitutioner og erhvervslivet skal bidrage hertil.\r\n    Danmark skal satse på høj kvalitet og højteknologi og indsatsen skal prioriteres således at der forskes mere i dybden end i bredden. Samtidig skal vi indgå på eliteplan i det internationale forskningssamarbejde.\r\n    Danske universiteter skal tilhøre den internationale elite. Kvaliteten af forskning, undervisning og uddannelse skal være på højeste niveau. Kvaliteten skal fremmes ved at lade forskningsinstitutionerne konkurrere om midlerne, både på dansk og europæisk plan om EU’s forskningsbevillinger.\r\n    Undervisning for tosprogede elever på eget modersmål (modersmålsundervisning) er ikke en opgave for det offentlige og skal derfor ikke genindføres.\r\n');
+
 -- --------------------------------------------------------
 
 --
@@ -59,6 +67,14 @@ CREATE TABLE `news` (
   `Fk_e_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `news`
+--
+
+INSERT INTO `news` (`n_id`, `name`, `phonenb`, `town_n`, `Fk_e_id`) VALUES
+(2, 'mille', '30494949', 'Taarnby', NULL),
+(3, 'mille', '30494949', 'Taarnby', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -69,8 +85,16 @@ CREATE TABLE `politiker` (
   `p_id` int(11) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
   `town` varchar(50) DEFAULT NULL,
+  `parti` varchar(100) NOT NULL,
   `Fk_ki_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `politiker`
+--
+
+INSERT INTO `politiker` (`p_id`, `name`, `town`, `parti`, `Fk_ki_id`) VALUES
+(1, 'Thomas Jaskov', 'K&oslash;benhavn', 'Venstre', 1);
 
 --
 -- Indexes for dumped tables
@@ -116,17 +140,17 @@ ALTER TABLE `evnt`
 -- AUTO_INCREMENT for table `keyissue`
 --
 ALTER TABLE `keyissue`
-  MODIFY `ki_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ki_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `n_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `n_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `politiker`
 --
 ALTER TABLE `politiker`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- Constraints for dumped tables
 --
