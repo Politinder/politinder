@@ -68,7 +68,7 @@
     <div class="col-1-1" style="padding-right:10px; margin-bottom: -10px;">
     <div class="container">
         <img src="img/tommy1.jpg" class="image">
-        <div class="middle"><div class="text">Spil her!</div>
+        <div class="middle"><div class="text"><a href="https://xd.adobe.com/view/155305e7-8bb1-45cc-a8e9-709cabf94c01/">Spil her!</a></div>
         </div>
     </div></div>
     </div>
