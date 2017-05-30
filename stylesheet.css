@@ -1,0 +1,96 @@
+/* vores eget stylesheet */
+
+
+.content {
+background: white;
+padding-top: 8px;
+font-family: helvetica, arial, sans-serif;
+font-size: 0,8em;
+color: grey;
+}
+
+
+.kort {
+    height: 620px;
+    background: url(kort.png); background-repeat: no-repeat;
+}
+
+.kort:hover {
+    background: url(kort1.png); background-repeat: no-repeat;
+    
+}
+.logo {
+    height: 125px;
+    
+}
+
+.tekst {
+    height: 125px;
+}
+
+.rute {
+    background: url(rute.jpg); background-repeat: no-repeat;
+    height: 125px;
+}
+
+.lokal, .tinder, .kalender {
+    height: 400px;
+
+}
+
+.mini {
+    height: 100px;
+}
+
+}
+.overskrift {
+    height: 80px;
+}
+.tekst2 {
+    height: 80px;
+    text-align: center;
+    
+}
+
+.politinder {
+    height: 100px;
+    background: url(enforalle1.png);
+}
+
+.tinderbillede {
+    height: 300px;
+    background: url(tommy1.jpg);
+    
+}
+
+.kalenderbillede {
+    height: 300px;
+    background: url(kalender.png); background-repeat: no-repeat;
+}
+.tekst3 {
+    height: 100px;
+}
+
+.footer {
+    height:  40px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 10px;
+    color: grey;
+    text-align: center;
+}
+
+.data {
+    height: 422px;
+    background: grey;
+}
+
+.pil1 {
+    background: url(pilleft.jpg); background-repeat: no-repeat; 
+    height: 422px;
+}
+
+.pil2 {
+    background: url(pilright.jpg); background-repeat: no-repeat;
+    height: 422px;
+    
+}
