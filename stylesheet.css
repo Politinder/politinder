@@ -42,7 +42,6 @@ color: grey;
     height: 100px;
 }
 
-}
 .overskrift {
     height: 80px;
 }
@@ -121,7 +120,6 @@ color: grey;
 
 .data {
     height: 422px;
-    <!--background: grey;-->
 }
 
 .kalendertekst {
@@ -135,6 +133,7 @@ padding: 3px;
   border-radius: 5px;  
   -webkit-border-radius: 5px;
 }
+
 fieldset legend {
 font-family: helvetica, arial, sans-serif;
 }
@@ -154,7 +153,24 @@ a:link {
     text-decoration: none;
 }
 
+
 .lp{
-	height: 422px;
+  	width: 530px;
+	margin-left: -35px;
+  	border: 1px solid black; 
+  	-moz-border-radius:5px;  
+  border-radius: 5px;  
+  -webkit-border-radius: 5px; 
+
+}
+
+.lp p{
+  	margin-left: -30px;
   	width: 450px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.lp img{
+	margin-top: 10px;
+  	margin-left: 10px;
 }

@@ -69,38 +69,38 @@ include 'db_con.php';
     <div class="content pil1"></div></div> 
         
     <div class="col-8-12">
-    <div class="data"><img src="img/ks.png" class="lp";>
+   		<div class="data lp"><img src="img/ks1.png">
     <?php
        
-       //$filter = array(
-       //"name"=> FILTER_SANITIZE_STRING,
-       //"town"=> FILTER_SANITIZE_STRING,
-       //"parti"=> FILTER_SANITIZE_STRING,
-       //"description"=> FILTER_SANITIZE_STRING
-       //);
-       // samler ALLE form data som array
-       //$formData = filter_input_array(INPUT_GET, $filter);
-       //print_r($formData);
-       //$name = $formData['name'];
-       //$town = $formData['town'];
-       //$parti = $formData['parti'];
-       //$beskrivelse = $formData['description'];
+       $filter = array(
+       "name"=> FILTER_SANITIZE_STRING,
+       "town"=> FILTER_SANITIZE_STRING,
+       "parti"=> FILTER_SANITIZE_STRING,
+       "description"=> FILTER_SANITIZE_STRING
+       );
+        //samler ALLE form data som array
+       $formData = filter_input_array(INPUT_GET, $filter);
+       print_r($formData);
+       $name = $formData['name'];
+       $town = $formData['town'];
+       $parti = $formData['parti'];
+       $beskrivelse = $formData['description'];
         
-       //$stmt = $con->prepare("SELECT name, town, parti, description FROM politiker");
-       // execute the statement
-       //$stmt->execute();
+       $stmt = $con->prepare("SELECT name, town, parti, description FROM politiker");
+        //execute the statement
+       $stmt->execute();
        // forberedelsen til data afhentning: prepared statement
-       //$stmt->bind_result($name, $town, $parti, $beskrivelse);
+       $stmt->bind_result($name, $town, $parti, $beskrivelse);
         
-       //echo '<ol>';
+       echo '<ol>';
         
-       //while($stmt->fetch()){
-         //  echo "<p>$name". '<br><br>'. "$town". '<br><br>'. "$parti". '<br><br>'. "$beskrivelse</p>";
-       //}
-       //echo '</ol>';
+       while($stmt->fetch()){
+         echo "<p>$name". '<br><br>'. "$town". '<br><br>'. "$parti". '<br><br>'. "$beskrivelse</p>";
+       }
+       echo '</ol>';
            
-       //$stmt->close();
-       //$con->close();
+       $stmt->close();
+       $con->close();
       
     ?>
 	</div></div> 
