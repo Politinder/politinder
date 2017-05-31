@@ -7,7 +7,7 @@
 const HOSTNAME = 'localhost'; // server
 const MYSQLUSER = 'root'; // superbruger
 const MYSQLPASS = 'root'; // password
-const MYSQLDB = 'pt'; // database navn
+const MYSQLDB = 'mydb'; // database navn
 
 // 2. Forbindelsen via mysqli metoden
 

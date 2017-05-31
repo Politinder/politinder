@@ -38,7 +38,7 @@ and open the template in the editor.
                               <div class="col-1-3" style="padding-right: 0;">
     
     <div class="col-1-1">
-    <div class="kalenderbillede"></div></div> 
+    <div class="kalenderbillede"><img src="kalender.png"></div></div> 
     
     <div class="col-1-1" style="padding-right:10px; margin-bottom: -10px;">
     <div class="content tekst3">Se hvor din lokale politikere opholder sig op til kommunalvalget. Tilmeld dig kalenderen og bliv opdateret, på din mobil, hvor dine politikere opholder sig og hvilke events de deltager i.</div> </div>
@@ -98,7 +98,7 @@ and open the template in the editor.
 			}
 		}
 
-		echo '<hr><a href="index.php"> Tilbage</a>';
+		//echo '<hr><a href="index.php"> Tilbage</a>';
 	}
 	
 ?>

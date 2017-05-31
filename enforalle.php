@@ -32,31 +32,31 @@
     <div class=" content overskrift"><br>Læs om dine lokale politikere. Bliv klogere på hvem de er og deres mærkesager.</div></div>    
         
     <div class="col-4-12">
-        <div class="mini"><img src="img/kandidat.jpg"></div></div>
+    <div class="mini"><img src="img/kandidat.jpg"></div></div>
       
     <div class="col-4-12">
-        <div class="mini"><img src="img/kandidat2.png"></div></div>
+    <div class="mini"><img src="img/kandidat2.png"></div></div>
     
      <div class="col-4-12">
-         <div class="mini"><img src="img/kandidat2.jpg"></div></div>
+    <div class="mini"><img src="img/kandidat2.jpg"></div></div>
       
     <div class="col-4-12">
-        <div class="mini"><img src="img/kandidat4.jpg"></div></div>
+    <div class="mini"><img src="img/kandidat4.jpg"></div></div>
       
     <div class="col-4-12">
-        <div class="mini"><img src="img/kandidat3.jpg"></div> </div>
+    <div class="mini"><img src="img/kandidat3.jpg"></div> </div>
     
      <div class="col-4-12">
-         <div class="mini"><img src="img/kandidat5.jpg"></div></div>
+    <div class="mini"><img src="img/kandidat5.jpg"></div></div>
     
     <div class="col-4-12">
-        <div class="mini"><img src="img/kandidat6.jpg"></div></div>
+    <div class="mini"><img src="img/kandidat6.jpg"></div></div>
       
     <div class="col-4-12">
-        <div class="mini"><img src="img/kandidat7.jpg"></div> </div>
+    <div class="mini"><img src="img/kandidat7.jpg"></div> </div>
         
     <div class="col-4-12" style="padding-right:10px; margin-bottom: -10px;">
-        <div class="mini"><img src="img/kandidat8.jpg"></div> </div>
+    <div class="mini"><img src="img/kandidat8.jpg"></div> </div>
     </div>
         </a>
         
@@ -68,7 +68,7 @@
     <div class="col-1-1" style="padding-right:10px; margin-bottom: -10px;">
     <div class="container">
         <img src="img/tommy1.jpg" class="image">
-        <div class="middle"><div class="text"><a href="https://xd.adobe.com/view/155305e7-8bb1-45cc-a8e9-709cabf94c01/">Spil her!</a></div>
+        <div class="middle"><a href="https://xd.adobe.com/view/7bed5470-b959-4873-bcc3-6c2068603d10/screen/b102c6f9-1a0b-4f60-b8c3-6a262e535c85/iPhone-6-7-2"><div class="text">Spil her!</div></a>
         </div>
     </div></div>
     </div>
@@ -76,16 +76,15 @@
     <div class="col-1-3" style="padding-right: 0;">
     
     <div class="col-1-1">
-    <div class="kalenderbillede"></div></div> 
-    
+    <div class="kalenderbillede"><img src="kalender.png"><a href="tilmeld.php">
+      
     <div class="col-1-1" style="padding-right:10px; margin-bottom: -10px;">
     <div class="content tekst3">Se hvor din lokale politikere opholder sig op til kommunalvalget. Tilmeld dig kalenderen og bliv opdateret, på din mobil, hvor dine politikere opholder sig og hvilke events de deltager i.</div> </div>
-    <a href="tilmeld.php">
-    <div class="col-2-12">
-    <div class="content tekst2"><h3>Tilmeld dig her</h3> </div>
-    </div></a>
-    
     </div>
+     <a href="tilmeld.php">
+    <div class="col-2-12">
+    <div class="content tekst2"><h3>Tilmeld dig her</h3></div>
+    </div></a>
       
     <div class="col-1-1">
         <div class=" footer"><br> © | En for alle, Kommunal og regionsvalg 2017</div>

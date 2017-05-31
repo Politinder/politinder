@@ -69,24 +69,40 @@ include 'db_con.php';
     <div class="content pil1"></div></div> 
         
     <div class="col-8-12">
-    <div class="content data">
-<?php
-						
-       $sql = "SELECT name, town, parti,  FROM politiker"; 
-		
-$result = mysqli_query ($mysqli, $sql) or die (mysqli_error($mysqli)); 
-
-if($row = mysqli_fetch_array($result)){
-	echo $row['name'] . "<br>";
-  	echo $row['town'] . "<br>";
- 	echo $row['parti'] . "<br>";
-  	//echo $row[''] . "<br>";
-  	//echo $row[''] . "<br>";
-}
-  else{
-  	return null;
-  }
- ?>
+    <div class="data"><img src="img/ks.png" class="lp";>
+    <?php
+       
+       //$filter = array(
+       //"name"=> FILTER_SANITIZE_STRING,
+       //"town"=> FILTER_SANITIZE_STRING,
+       //"parti"=> FILTER_SANITIZE_STRING,
+       //"description"=> FILTER_SANITIZE_STRING
+       //);
+       // samler ALLE form data som array
+       //$formData = filter_input_array(INPUT_GET, $filter);
+       //print_r($formData);
+       //$name = $formData['name'];
+       //$town = $formData['town'];
+       //$parti = $formData['parti'];
+       //$beskrivelse = $formData['description'];
+        
+       //$stmt = $con->prepare("SELECT name, town, parti, description FROM politiker");
+       // execute the statement
+       //$stmt->execute();
+       // forberedelsen til data afhentning: prepared statement
+       //$stmt->bind_result($name, $town, $parti, $beskrivelse);
+        
+       //echo '<ol>';
+        
+       //while($stmt->fetch()){
+         //  echo "<p>$name". '<br><br>'. "$town". '<br><br>'. "$parti". '<br><br>'. "$beskrivelse</p>";
+       //}
+       //echo '</ol>';
+           
+       //$stmt->close();
+       //$con->close();
+      
+    ?>
 	</div></div> 
         
     <div class="col-2-12" style="padding-right:10px; margin-bottom: -10px;">
